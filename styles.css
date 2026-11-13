@@ -1,0 +1,575 @@
+/* Fuentes originales incluidas en assets/fonts. */
+@font-face{font-family:'Skynila';src:url('assets/fonts/Skynila-Regular.otf') format('opentype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Roobert TRIAL';src:url('assets/fonts/Roobert-Light.otf') format('opentype');font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:'Roobert TRIAL';src:url('assets/fonts/Roobert-Medium.otf') format('opentype');font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:'Roobert TRIAL';src:url('assets/fonts/Roobert-Semibold.otf') format('opentype');font-style:normal;font-weight:600;font-display:swap}
+html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #BDE0FF;outline-offset:4px}
+
+#loto-full{--beige:#FCF9EB;--blue:#BDE0FF;--wine:#51000E;--dark:#231815;--brown:#4A2E27;background:var(--beige);color:var(--dark);font-family:"tome-sans-variable",Arial,sans-serif}#loto-full *{box-sizing:border-box}#loto-full button,#loto-full a{font-family:'Roobert TRIAL',Arial,sans-serif}#loto-full nav{background:var(--brown);padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}#loto-full nav img{width:80px;display:block}#loto-full nav div{display:flex;gap:28px;flex-wrap:wrap}#loto-full nav a{color:var(--beige);text-decoration:none;font-size:16px}#loto-full nav a:hover{color:var(--blue)}#loto-full .wrap{padding:56px 5%}#loto-full .hero{display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:center;padding-bottom:24px}#loto-full .photo{aspect-ratio:1;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:var(--brown)}#loto-full h1,#loto-full h2{font-family:Skynila,'Arial',sans-serif;font-weight:400;color:var(--wine);letter-spacing:-3px}#loto-full h1{font-size:96px;margin:0 0 20px}#loto-full .intro{font-size:19px;line-height:1.65;margin:0}#loto-full h2{font-size:52px;margin:0 0 30px}#loto-full h3{font-family:'Roobert TRIAL',Arial,sans-serif;font-size:20px;line-height:1.25;font-weight:500;margin:0 0 22px}#loto-full .ribbons{height:210px;position:relative;overflow:hidden;margin:12px 0 36px}#loto-full .ribbon{position:absolute;top:68px;left:-5%;width:110%;padding:15px 0;background:var(--wine);color:var(--blue);transform:rotate(-5deg);overflow:hidden}#loto-full .ribbon.second{background:var(--blue);color:var(--wine);transform:rotate(5deg);top:90px}#loto-full .run{display:flex;width:max-content;animation:loto-right 22s linear infinite;font:38px/1.25 Skynila,Arial,sans-serif;white-space:nowrap}#loto-full .run span{padding-right:24px}@keyframes loto-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}#loto-full .skills{display:grid;grid-template-columns:1fr 1fr;gap:64px;padding-top:24px}#loto-full .programs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:360px}#loto-full .programs div{aspect-ratio:1;display:grid;place-items:center;border-radius:5px;background:var(--dark);color:var(--beige);font-size:36px}#loto-full .tags{display:flex;gap:10px;flex-wrap:wrap;align-content:start}#loto-full .tags span{background:var(--blue);padding:16px 18px;border-radius:5px;font-size:16px}#loto-full .languages{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:44px}#loto-full .languages h3{margin-bottom:18px}#loto-full .track{height:32px;background:var(--blue);border-radius:50px;overflow:hidden}#loto-full .track span{display:block;height:100%;border-radius:50px;background:var(--wine)}#loto-full .level{font-size:16px;margin:16px 0 0}#loto-full .projects{padding-top:48px}#loto-full .folder{background:var(--prev);padding-top:16px}#loto-full .tab{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--ink);border:0;min-height:60px;padding:12px 26px;width:var(--width);margin-left:var(--left);font-size:clamp(16px,2.4vw,26px);line-height:1.2}#loto-full .tab::before{content:'';position:absolute;inset:0;background:var(--fill);z-index:-1;clip-path:var(--clip,polygon(6% 0,94% 0,100% 100%,0 100%))}#loto-full .base{height:16px;background:var(--fill)}#loto-full .mosaic{background:var(--fill);padding:8px 22px 24px;display:grid;grid-template-columns:1fr 1fr;gap:16px}#loto-full [hidden]{display:none!important}#loto-full .project{position:relative;padding:0;border:0;aspect-ratio:8/5;overflow:hidden;background:var(--beige);color:var(--dark);text-align:left}#loto-full .project:first-child{grid-column:1/-1}#loto-full .project img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .2s}#loto-full .project:first-child img{object-fit:contain}#loto-full .project:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.7));pointer-events:none}#loto-full .project strong{position:absolute;bottom:30px;left:16px;right:16px;z-index:1;color:var(--beige);font-size:18px;font-weight:500}#loto-full .project:hover img,#loto-full .project:focus-visible img{filter:brightness(.5)}#loto-full .placeholder{display:grid;place-items:center;aspect-ratio:8/5;background:var(--blue)}#loto-full .courses{background:var(--blue);margin-top:96px}#loto-full .course-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}#loto-full .course{background:var(--beige);min-width:0}#loto-full .year{padding:10px 24px;margin:0;font-size:13px;font-weight:300}#loto-full .course img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}#loto-full .course:nth-child(2) img{object-fit:contain;background:#ccc}#loto-full .copy{padding:24px;overflow-wrap:normal}#loto-full .copy h3{font-size:20px;line-height:1.15;margin:0 0 20px}#loto-full .copy p{font-size:11px;line-height:1.45;margin:0}#loto-full dialog{background:var(--beige);color:var(--dark);border:0;padding:44px 28px 28px;width:min(90%,900px);max-height:90vh}#loto-full dialog h3{margin-bottom:20px}#loto-full dialog img{width:100%;max-height:65vh;object-fit:contain}#loto-full dialog p{line-height:1.5}#loto-full .close{position:absolute;top:8px;right:8px;border:0;background:transparent;color:var(--dark);font:28px/1 Arial;width:32px;height:32px}#loto-full a:focus-visible,#loto-full button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}@media(max-width:650px){#loto-full nav{align-items:flex-start}#loto-full nav div{gap:12px}#loto-full nav a{font-size:13px}#loto-full nav img{width:68px}#loto-full .wrap{padding:36px 24px}#loto-full .hero{grid-template-columns:1fr;gap:24px}#loto-full .photo{max-width:220px;width:100%}#loto-full h1{font-size:72px}#loto-full .skills{grid-template-columns:1fr;gap:32px}#loto-full .languages{grid-template-columns:1fr;gap:28px}#loto-full .course-grid{grid-template-columns:1fr}#loto-full .tab{width:90%;margin-left:5%;font-size:18px}#loto-full .mosaic{grid-template-columns:1fr}#loto-full .ribbons{height:180px}#loto-full .run{font-size:28px}}@media(prefers-reduced-motion:reduce){#loto-full .run{animation:none}#loto-full .project img{transition:none}}
+
+
+
+#loto-footer-brown{background:#4A2E27;color:#FCF9EB;padding:48px 32px;font-family:"tome-sans-variable",Arial,sans-serif;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}#loto-footer-brown .name{font-family:Skynila,Arial,sans-serif;font-size:clamp(36px,6vw,64px);line-height:.95;margin:0;font-weight:400;letter-spacing:-2px}#loto-footer-brown .profession{font-family:Skynila,Arial,sans-serif;color:#BDE0FF;font-size:24px;margin:20px 0 0}#loto-footer-brown .contacts{display:grid;gap:12px;min-width:0}#loto-footer-brown a{display:flex;gap:12px;align-items:center;color:#FCF9EB;text-decoration:none;font-size:16px;overflow-wrap:anywhere}#loto-footer-brown .circle{width:40px;height:40px;flex:0 0 40px;border-radius:50%;background:#FCF9EB;color:#231815;display:grid;place-items:center}#loto-footer-brown .circle svg,#loto-footer-brown .circle img{width:20px;height:20px}#loto-footer-brown a:hover,#loto-footer-brown a:focus-visible{color:#BDE0FF;text-decoration:underline}#loto-footer-brown a:hover .circle,#loto-footer-brown a:focus-visible .circle{background:#BDE0FF}@media(max-width:600px){#loto-footer-brown{grid-template-columns:1fr;padding:36px 24px;gap:28px}}
+
+
+
+#loto-full .restored-ribbons{height:auto;aspect-ratio:1400/300;margin:28px 0 12px}#loto-full .restored-ribbons svg{display:block;width:100%;height:100%}
+#loto-full .wrap{padding:48px 4.2%}#loto-full .hero{gap:40px;padding-top:64px;padding-bottom:24px}#loto-full .intro{font-size:16px;line-height:1.6}#loto-full .programs{max-width:272px}#loto-full .skills{gap:64px;padding-top:24px}#loto-full .programs div{font-size:28px}#loto-full .tags span{padding:14px 16px;font-size:14px}#loto-full .track{border-radius:5px}#loto-full .track span{border-radius:5px}#loto-full .courses{margin-top:112px}#loto-full h2{font-size:48px}#loto-full .copy{padding:20px}#loto-full .course{min-height:355px}#loto-full #loto-footer-brown{background:#231815}#loto-full #loto-footer-brown .name{font-size:48px}#loto-full #loto-footer-brown a{font-size:14px}
+@media(max-width:650px){#loto-full .hero{grid-template-columns:1fr 2fr;gap:24px}#loto-full .hero h1{font-size:64px}#loto-full .intro{font-size:14px}#loto-full .skills{grid-template-columns:1fr 1fr;gap:24px}#loto-full .languages{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}#loto-full .level{font-size:13px}#loto-full .course-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}#loto-full .copy{padding:14px}#loto-full .copy h3{font-size:16px}}
+@media(max-width:450px){#loto-full .hero,#loto-full .skills,#loto-full .languages,#loto-full .course-grid{grid-template-columns:1fr}#loto-full .course{min-height:0}}
+
+/* Accesibilidad y ajustes de pantallas pequeñas. */
+#loto-full [hidden]{display:none!important}
+#loto-full dialog{max-width:min(760px,90vw);max-height:85vh;overflow:auto}
+#loto-full dialog img{max-width:100%;height:auto}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#loto-full *{animation:none!important;transition:none!important}}
+
+/* Jerarquía tipográfica; evita negritas sintéticas. */
+#loto-full{font-synthesis:none}
+#loto-full button,#loto-full a,#loto-full .tags span{font-family:"Roobert TRIAL",Arial,sans-serif;font-weight:500}
+#loto-full h3{font-weight:600}
+#loto-full .skills h3,#loto-full .languages h3,#loto-full .copy h3{font-weight:500}
+#loto-full .year{font-family:"Roobert TRIAL",Arial,sans-serif;font-weight:300}
+
+#loto-full #loto-courses h2{letter-spacing:0}
+#loto-full #loto-projects-title{font-family:'Skynila',sans-serif;letter-spacing:0;margin:0 4.2% 4px}
+#loto-full .folder:first-child{padding-top:0}
+#loto-full .folder:first-child .tab{margin-left:auto;margin-right:4.3%}
+#loto-full .languages .track,#loto-full .languages .track span{border-radius:0}
+
+/* Footer: proporciones de la referencia original en Skynila. */
+#loto-full #loto-footer-brown .name{
+  font-family:'Skynila',sans-serif;
+  font-variant-ligatures:common-ligatures discretionary-ligatures;
+  font-feature-settings:'liga' 1,'ss01' 1,'ss02' 1;
+  font-weight:400;
+  font-style:normal;
+  font-size:52px;
+  line-height:1.02;
+  letter-spacing:0;
+}
+#loto-full #loto-footer-brown .profession{
+  font-family:'Skynila',sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:24px;
+  line-height:1.2;
+  letter-spacing:0;
+  margin-top:6px;
+}
+
+#loto-full nav{background:#4A2E27}
+
+#loto-full .programs{display:block}
+#loto-full .programs img{display:block;width:100%;height:auto}
+
+#loto-full .restored-ribbons + .wrap{padding-top:24px}
+
+/* Retrato recortado sobre un círculo, con el cabello fuera de su borde superior. */
+#loto-full .hero .photo{position:relative;isolation:isolate;background:transparent;border-radius:0;display:block;aspect-ratio:1/1.12}
+#loto-full .hero .photo::before{content:'';position:absolute;z-index:-1;left:0;right:0;bottom:0;aspect-ratio:1;border-radius:50%;background:var(--blue)}
+#loto-full .hero .photo img{display:block;position:absolute;bottom:0;left:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;border-radius:0 0 50% 50% / 0 0 45% 45%}
+
+#loto-full .animation-projects .project:first-child{grid-column:auto}
+#loto-full .animation-projects .project{background:var(--dark)}
+#loto-full .project video{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+#loto-full .video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--beige);color:var(--wine);font-size:22px;pointer-events:none}
+#loto-full dialog video{display:block;width:100%;max-height:65vh;background:#000}
+
+#loto-full .animation-projects{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+#loto-full .animation-projects .project:nth-child(2){grid-column:2;grid-row:1 / span 2;aspect-ratio:9/16;width:100%}
+@media(max-width:650px){
+  #loto-full .animation-projects{grid-template-columns:1fr}
+  #loto-full .animation-projects .project:nth-child(2){grid-column:1;grid-row:auto}
+}
+
+#loto-full dialog.portrait-video video{width:auto;height:auto;max-width:100%;max-height:65vh;aspect-ratio:9/16;object-fit:contain;margin-inline:auto}
+
+#loto-full .animation-projects .project{align-self:start;aspect-ratio:16/9}
+#loto-full .animation-projects .project video{object-position:center top}
+
+#loto-full .project-behance{display:inline-block;color:var(--wine);text-underline-offset:4px;margin-top:8px}
+
+#loto-full dialog p{white-space:pre-line}
+
+/* Fichas editoriales: imagen, índice y pie independientes. */
+#loto-full .mosaic{padding:24px 4.2% 44px;gap:28px}
+#loto-full .project,#loto-full .animation-projects .project:nth-child(2){aspect-ratio:auto;overflow:visible;background:transparent;color:var(--ink)}
+#loto-full .project:after{display:none}
+#loto-full .project-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--beige)}
+#loto-full .project:first-child .project-media{aspect-ratio:16/9}
+#loto-full .project-media img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+#loto-full .project:first-child .project-media img{object-fit:contain}
+#loto-full .project-caption{display:grid;grid-template-columns:32px 1fr 36px;gap:12px;align-items:start;padding:16px 0 20px;border-top:1px solid currentColor;margin-top:12px}
+#loto-full .project-number{font-size:12px;line-height:26px;opacity:.65}
+#loto-full .project strong{position:static;color:inherit;font-size:clamp(18px,2.2vw,28px);line-height:1.15;font-weight:500}
+#loto-full .project-arrow{font-size:30px;line-height:1;text-align:right;transition:transform .2s}
+#loto-full .project:hover img,#loto-full .project:focus-visible img{filter:none;transform:scale(1.025)}
+#loto-full .project:hover .project-arrow{transform:translate(3px,-3px)}
+#loto-full .animation-projects .project-media{aspect-ratio:16/9}
+#loto-full .animation-projects .project:nth-child(2) .project-media{aspect-ratio:9/16}
+#loto-full .video-play{width:42px;height:42px;font-size:16px;top:auto;left:auto;bottom:16px;right:16px;transform:none}
+#loto-full dialog{padding:56px 36px 32px;border-top:8px solid var(--wine);box-shadow:0 24px 100px #23181555}
+#loto-full dialog::backdrop{background:#231815b8;backdrop-filter:blur(6px)}
+#loto-full dialog h3{font-family:'Skynila',sans-serif;font-weight:400;font-size:clamp(26px,4vw,42px);line-height:1.1;max-width:90%;margin-bottom:28px;color:var(--wine)}
+#loto-full dialog p{font-size:16px;line-height:1.65;max-width:64ch;margin:24px 0 12px}
+#loto-full dialog .close{top:12px;right:16px;width:36px;height:36px;font-size:30px}
+#loto-full dialog .project-behance{border-bottom:1px solid var(--wine);padding:8px 0;text-decoration:none}
+@media(max-width:650px){#loto-full .mosaic{padding:20px 24px 32px;gap:20px}#loto-full dialog{padding:48px 20px 24px}#loto-full .project-caption{grid-template-columns:24px 1fr 28px;gap:8px}}
+
+/* Portadas con el título superpuesto; el detalle conserva su composición editorial. */
+#loto-full .project{overflow:hidden}
+#loto-full .project-caption{position:absolute;inset:auto 0 0;display:block;margin:0;border:0;padding:48px 24px 24px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:var(--beige);pointer-events:none}
+#loto-full .project-number,#loto-full .project-arrow{display:none}
+#loto-full .project-caption strong{position:static;display:block;color:var(--beige);font-size:clamp(18px,2.2vw,28px);line-height:1.2}
+#loto-full .video-play{top:50%;left:50%;bottom:auto;right:auto;transform:translate(-50%,-50%)}
+@media(max-width:650px){#loto-full .project-caption{padding:40px 16px 20px}}
+
+#loto-full .project-gallery{display:grid;gap:16px;margin-top:28px}
+#loto-full .project-gallery img{width:100%;max-height:none;object-fit:contain}
+
+#loto-full .stand-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+#loto-full .stand-mosaic img{display:block;height:auto;margin:0}
+#loto-full .stand-mosaic img:last-child{grid-column:1/-1}
+@media(max-width:600px){#loto-full .stand-mosaic{grid-template-columns:1fr}#loto-full .stand-mosaic img:last-child{grid-column:auto}}
+
+/* Oreo Stand: dos vistas generales y un bloque de tres detalles alineados. */
+#loto-full .stand-mosaic{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1.15fr 1fr 1fr;aspect-ratio:1.18;gap:10px;align-items:stretch}
+#loto-full .stand-mosaic img{width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:center;grid-column:auto}
+#loto-full .stand-mosaic img:nth-child(1){grid-column:1/7;grid-row:1}
+#loto-full .stand-mosaic img:nth-child(2){grid-column:7/13;grid-row:1}
+#loto-full .stand-mosaic img:nth-child(3){grid-column:1/8;grid-row:2/4;object-position:58% center}
+#loto-full .stand-mosaic img:nth-child(4){grid-column:8/13;grid-row:2;object-position:48% center}
+#loto-full .stand-mosaic img:nth-child(5){grid-column:8/13;grid-row:3;object-position:center}
+@media(max-width:600px){
+ #loto-full .stand-mosaic{gap:6px;aspect-ratio:1}
+ #loto-full .stand-mosaic img:nth-child(3){grid-column:1/7}
+ #loto-full .stand-mosaic img:nth-child(4),#loto-full .stand-mosaic img:nth-child(5){grid-column:7/13}
+}
+
+#loto-full .stand-mosaic img:nth-child(2){grid-column:1/8;grid-row:2/4;object-position:center}
+#loto-full .stand-mosaic img:nth-child(3){grid-column:7/13;grid-row:1;object-position:center}
+@media(max-width:600px){
+ #loto-full .stand-mosaic img:nth-child(2){grid-column:1/7;grid-row:2/4}
+ #loto-full .stand-mosaic img:nth-child(3){grid-column:7/13;grid-row:1}
+}
+
+/* Mosaico de animación: tres portadas apiladas junto al formato vertical. */
+#loto-full .animation-projects{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch;aspect-ratio:1.05}
+#loto-full .animation-projects .project{width:100%;height:100%;min-height:0;align-self:stretch;aspect-ratio:auto}
+#loto-full .animation-projects .project:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .animation-projects .project:nth-child(2){grid-column:2;grid-row:1/4;aspect-ratio:auto}
+#loto-full .animation-projects .project:nth-child(3){grid-column:1;grid-row:2}
+#loto-full .animation-projects .project:nth-child(4){grid-column:1;grid-row:3}
+#loto-full .animation-projects .project .project-media{width:100%;height:100%;aspect-ratio:auto}
+#loto-full .animation-projects .project .project-media img{object-fit:cover;object-position:center}
+@media(max-width:650px){
+ #loto-full .animation-projects{aspect-ratio:auto;grid-template-columns:1fr;grid-template-rows:none}
+ #loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto;height:auto}
+ #loto-full .animation-projects .project .project-media{height:auto;aspect-ratio:16/9}
+ #loto-full .animation-projects .project:nth-child(2) .project-media{aspect-ratio:9/16}
+}
+
+#loto-full .character-mosaic{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));aspect-ratio:1.35;gap:10px;align-items:stretch}
+#loto-full .character-mosaic img{display:block;width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:center}
+#loto-full .character-mosaic img:nth-child(1){grid-column:1/4;grid-row:1}
+#loto-full .character-mosaic img:nth-child(2){grid-column:4/7;grid-row:1}
+#loto-full .character-mosaic img:nth-child(3){grid-column:1/3;grid-row:2}
+#loto-full .character-mosaic img:nth-child(4){grid-column:3/5;grid-row:2}
+#loto-full .character-mosaic img:nth-child(5){grid-column:5/7;grid-row:2}
+@media(max-width:600px){#loto-full .character-mosaic{gap:6px;aspect-ratio:1}}
+
+/* La vista 6 protagoniza el mosaico de Oreo Personaje. */
+#loto-full .character-mosaic{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));aspect-ratio:1.15}
+#loto-full .character-mosaic img:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .character-mosaic img:nth-child(2){grid-column:2;grid-row:1}
+#loto-full .character-mosaic img:nth-child(3){grid-column:3;grid-row:1}
+#loto-full .character-mosaic img:nth-child(4){grid-column:3;grid-row:2/4}
+#loto-full .character-mosaic img:nth-child(5){grid-column:1/3;grid-row:2/4}
+
+#loto-full dialog img.character-motion{display:block;width:100%;height:auto;max-height:none;margin-top:16px}
+
+/* Mantiene la vista completa del personaje y un ritmo uniforme con el GIF. */
+#loto-full .character-mosaic{aspect-ratio:auto;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto;gap:10px}
+#loto-full .character-mosaic img:nth-child(-n+3){aspect-ratio:1.15;height:100%;object-fit:cover}
+#loto-full .character-mosaic img:nth-child(4){grid-column:3;grid-row:2;height:100%;object-fit:cover}
+#loto-full .character-mosaic img:nth-child(5){grid-column:1/3;grid-row:2;aspect-ratio:4/5;height:auto;object-fit:contain}
+#loto-full dialog img.character-motion{margin-top:10px}
+
+#loto-full .character-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto}
+#loto-full .character-mosaic img:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .character-mosaic img:nth-child(2){grid-column:2;grid-row:1}
+#loto-full .character-mosaic img:nth-child(3){grid-column:2;grid-row:2;aspect-ratio:auto}
+#loto-full .character-mosaic img:nth-child(4){grid-column:2;grid-row:3;height:100%;object-fit:cover;object-position:center}
+#loto-full .character-mosaic img:nth-child(5){grid-column:1;grid-row:2/4;height:auto;aspect-ratio:4/5;object-fit:contain;align-self:stretch}
+#loto-full dialog .project-software{display:block;font-size:12px;line-height:1.5;margin:12px 0 0;opacity:.75}
+
+/* Stand: misma división vertical en ambas filas y bordes coincidentes. */
+#loto-full .stand-mosaic{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1.1fr 1fr 1fr;aspect-ratio:1.18;gap:10px;align-items:stretch}
+#loto-full .stand-mosaic img:nth-child(1){grid-column:1/8;grid-row:1}
+#loto-full .stand-mosaic img:nth-child(3){grid-column:8/13;grid-row:1}
+#loto-full .stand-mosaic img:nth-child(2){grid-column:1/8;grid-row:2/4}
+#loto-full .stand-mosaic img:nth-child(4){grid-column:8/13;grid-row:2}
+#loto-full .stand-mosaic img:nth-child(5){grid-column:8/13;grid-row:3}
+#loto-full .stand-mosaic img{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:cover;margin:0}
+
+#loto-full dialog.character-detail[open]{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;align-items:center}
+#loto-full dialog.character-detail>h3{grid-column:1/-1}
+#loto-full dialog.character-detail>img:not(.project-gallery){grid-column:1;grid-row:2;width:100%;height:auto;max-height:none}
+#loto-full dialog.character-detail>p{grid-column:2;grid-row:2;margin:0;max-width:none}
+#loto-full dialog.character-detail>.project-gallery{grid-column:1/-1}
+@media(max-width:600px){
+ #loto-full dialog.character-detail[open]{grid-template-columns:1fr}
+ #loto-full dialog.character-detail>p{grid-column:1;grid-row:3;margin-top:20px}
+}
+
+#loto-full dialog.character-detail[open]{column-gap:10px}
+#loto-full dialog.character-detail>p{padding-left:18px}
+#loto-full dialog.character-detail>img.character-motion{margin-top:28px}
+#loto-full dialog.character-detail>.character-mosaic{margin-top:10px}
+@media(max-width:600px){#loto-full dialog.character-detail>p{padding-left:0}}
+
+#loto-full .character-mosaic img:nth-child(1){grid-column:2;grid-row:2;aspect-ratio:auto;height:100%}
+#loto-full .character-mosaic img:nth-child(2){grid-column:2;grid-row:3;aspect-ratio:auto;height:100%}
+#loto-full .character-mosaic img:nth-child(3){grid-column:1;grid-row:1;aspect-ratio:1.15;height:100%}
+#loto-full .character-mosaic img:nth-child(4){grid-column:2;grid-row:1;aspect-ratio:1.15;height:100%}
+#loto-full dialog.character-detail>img.character-motion{margin-top:10px}
+
+#loto-full dialog.character-detail[open]{grid-template-columns:minmax(0,1fr)}
+#loto-full dialog.character-detail>img:not(.project-gallery){grid-column:1;grid-row:2;width:100%;height:auto;max-height:none}
+#loto-full dialog.character-detail>p{grid-column:1;grid-row:3;padding:0;margin:24px 0 14px;max-width:none}
+
+/* Otros: las piezas conservan su proporción original y se muestran completas. */
+#loto-full .other-projects{display:block;columns:2;column-gap:16px}
+#loto-full .other-projects .project{display:block;width:100%;height:auto;break-inside:avoid;margin:0 0 16px;aspect-ratio:auto}
+#loto-full .other-projects .project .project-media{aspect-ratio:auto;height:auto;background:transparent}
+#loto-full .other-projects .project .project-media img{display:block;width:100%;height:auto;object-fit:contain;transform:none}
+@media(max-width:650px){#loto-full .other-projects{columns:1}}
+
+/* Filas alineadas sin recortar los trabajos de Otros. */
+#loto-full .other-projects{display:grid;columns:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+#loto-full .other-projects .project{margin:0;height:100%;background:var(--beige);grid-column:auto}
+#loto-full .other-projects .project .project-media{height:100%;min-height:0;aspect-ratio:3/4;display:grid;place-items:center}
+#loto-full .other-projects .project .project-media img{width:100%;height:100%;max-height:100%;object-fit:contain}
+#loto-full .other-projects .project:nth-child(3){grid-column:1/-1}
+#loto-full .other-projects .project:nth-child(3) .project-media{aspect-ratio:16/9}
+@media(max-width:650px){#loto-full .other-projects{grid-template-columns:1fr}#loto-full .other-projects .project:nth-child(3){grid-column:1}}
+
+/* Otros: cada tarjeta termina en el borde real de su imagen. */
+#loto-full .other-projects{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:16px}
+#loto-full .other-projects .project{height:auto;min-height:0;background:transparent;align-self:start}
+#loto-full .other-projects .project .project-media{display:block;height:auto;min-height:0;aspect-ratio:auto}
+#loto-full .other-projects .project .project-media img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
+#loto-full .other-projects .project:nth-child(1){grid-column:1/-1;grid-row:1}
+#loto-full .other-projects .project:nth-child(2){grid-column:1;grid-row:2}
+#loto-full .other-projects .project:nth-child(4){grid-column:2;grid-row:2}
+#loto-full .other-projects .project:nth-child(3){grid-column:1/-1;grid-row:3}
+#loto-full .other-projects .project:nth-child(3) .project-media{aspect-ratio:auto}
+#loto-full .other-projects .project:nth-child(5){grid-column:1/-1;grid-row:4}
+#loto-full .other-projects .project-caption{bottom:0;padding-top:48px}
+@media(max-width:650px){#loto-full .other-projects .project:nth-child(n){grid-column:1/-1;grid-row:auto}}
+
+#loto-full .other-projects .project:nth-child(3){grid-column:1;grid-row:3}
+#loto-full .other-projects .project:nth-child(5){grid-column:2;grid-row:3}
+@media(max-width:650px){#loto-full .other-projects .project:nth-child(3),#loto-full .other-projects .project:nth-child(5){grid-column:1;grid-row:auto}}
+
+#loto-full .other-projects .project:nth-child(3){align-self:stretch;height:100%}
+#loto-full .other-projects .project:nth-child(3) .project-media{height:100%}
+#loto-full .other-projects .project:nth-child(3) .project-media img{height:100%;object-fit:cover;object-position:center}
+@media(max-width:650px){
+ #loto-full .other-projects .project:nth-child(3),#loto-full .other-projects .project:nth-child(3) .project-media{height:auto}
+ #loto-full .other-projects .project:nth-child(3) .project-media img{height:auto;object-fit:contain}
+}
+
+#loto-full .other-projects .project:hover .project-media img,
+#loto-full .other-projects .project:focus-visible .project-media img{transform:scale(1.025)}
+
+#loto-full dialog .infographic-size{display:block;font-size:12px;line-height:1.5;margin:4px 0 24px}
+#loto-full dialog img.infographic-installation{width:100%;height:auto;max-height:none;margin-top:16px}
+
+#loto-full dialog .infographic-size{margin:4px 0 0;font-size:12px;line-height:1.4}
+
+#loto-full .geles-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch}
+#loto-full .geles-mosaic img{display:block;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:1.58;object-fit:cover}
+#loto-full .geles-mosaic img:last-child{grid-column:1/-1;aspect-ratio:auto;height:auto;object-fit:contain}
+@media(max-width:600px){#loto-full .geles-mosaic{grid-template-columns:1fr}#loto-full .geles-mosaic img{height:auto;aspect-ratio:auto;object-fit:contain}}
+
+#loto-full dialog .project-credit{display:block;font-size:12px;line-height:1.5;margin:8px 0 0}
+
+#loto-full dialog.florentinas-detail>img{display:block;width:100%;height:auto;max-height:none;margin-inline:0}
+#loto-full dialog.florentinas-detail>p{width:100%;max-width:none;margin-inline:0}
+
+/* Otros sin Michel Domit: dos piezas iniciales y la pareja de cierre. */
+#loto-full .other-projects .project:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .other-projects .project:nth-child(2){grid-column:2;grid-row:1}
+#loto-full .other-projects .project:nth-child(3){grid-column:1;grid-row:2}
+#loto-full .other-projects .project:nth-child(4){grid-column:2;grid-row:2}
+@media(max-width:650px){#loto-full .other-projects .project:nth-child(n){grid-column:1;grid-row:auto}}
+
+#loto-full .other-projects{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto;gap:16px;align-items:start}
+#loto-full .other-projects .project:nth-child(1){grid-column:1/-1;grid-row:1}
+#loto-full .other-projects .project:nth-child(2){grid-column:1;grid-row:2/4;align-self:stretch;height:100%}
+#loto-full .other-projects .project:nth-child(2) .project-media{height:100%}
+#loto-full .other-projects .project:nth-child(2) .project-media img{height:100%;object-fit:cover;object-position:center}
+#loto-full .other-projects .project:nth-child(3){grid-column:2;grid-row:2;height:auto;align-self:start}
+#loto-full .other-projects .project:nth-child(3) .project-media,#loto-full .other-projects .project:nth-child(3) .project-media img{height:auto}
+#loto-full .other-projects .project:nth-child(4){grid-column:2;grid-row:3}
+@media(max-width:650px){
+ #loto-full .other-projects{grid-template-columns:1fr}
+ #loto-full .other-projects .project:nth-child(n){grid-column:1;grid-row:auto;height:auto}
+ #loto-full .other-projects .project:nth-child(2) .project-media,#loto-full .other-projects .project:nth-child(2) .project-media img{height:auto}
+}
+
+#loto-full dialog .infographic-size{margin:0 0 8px}
+
+#loto-full dialog img.infographic-installation{margin-top:36px}
+
+#loto-full dialog .infographic-size{text-align:right}
+
+#loto-full dialog .infographic-size{margin:6px 0 0;text-align:right}
+
+#loto-full dialog.infographic-detail>p{margin:20px 0}
+#loto-full dialog.infographic-detail img.infographic-installation{margin-top:0}
+
+#loto-full dialog.infographic-detail .infographic-size{position:absolute;right:36px;margin:4px 0 0;line-height:1.4}
+#loto-full dialog.infographic-detail>p{margin:28px 0}
+#loto-full dialog.infographic-detail img.infographic-installation{margin-top:0}
+@media(max-width:650px){#loto-full dialog.infographic-detail .infographic-size{right:20px}}
+
+#loto-full .animation-projects{aspect-ratio:auto;grid-template-rows:repeat(3,minmax(0,1fr)) auto}
+#loto-full .animation-projects .project:nth-child(5){grid-column:1;grid-row:4;height:auto}
+#loto-full .animation-projects .project:nth-child(6){grid-column:2;grid-row:4;height:auto}
+#loto-full .animation-projects .project:nth-child(5) .project-media,#loto-full .animation-projects .project:nth-child(6) .project-media{height:auto;aspect-ratio:16/9}
+#loto-full .animation-projects .project:nth-child(2) .project-media{aspect-ratio:9/16}
+@media(max-width:650px){#loto-full .animation-projects{grid-template-rows:none}#loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto}}
+
+/* Seis proyectos: cuatro vistas junto al video vertical y un cierre panorámico. */
+#loto-full .animation-projects{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);grid-template-rows:repeat(4,minmax(0,1fr)) auto;gap:16px;align-items:stretch;aspect-ratio:auto}
+#loto-full .animation-projects .project:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .animation-projects .project:nth-child(3){grid-column:1;grid-row:2}
+#loto-full .animation-projects .project:nth-child(4){grid-column:1;grid-row:3}
+#loto-full .animation-projects .project:nth-child(5){grid-column:1;grid-row:4}
+#loto-full .animation-projects .project:nth-child(2){grid-column:2;grid-row:1/5}
+#loto-full .animation-projects .project:nth-child(6){grid-column:1/-1;grid-row:5}
+#loto-full .animation-projects .project:nth-child(n){height:100%;min-height:0;aspect-ratio:auto}
+#loto-full .animation-projects .project:nth-child(n) .project-media{height:100%;aspect-ratio:auto}
+#loto-full .animation-projects .project:nth-child(1) .project-media{aspect-ratio:16/9}
+#loto-full .animation-projects .project:nth-child(6) .project-media{height:auto;aspect-ratio:2/1}
+#loto-full .animation-projects .project:nth-child(2) .project-media img{object-position:center}
+@media(max-width:650px){
+ #loto-full .animation-projects{grid-template-columns:1fr;grid-template-rows:none}
+ #loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto;height:auto}
+ #loto-full .animation-projects .project:nth-child(n) .project-media{height:auto;aspect-ratio:16/9}
+ #loto-full .animation-projects .project:nth-child(2) .project-media{aspect-ratio:9/16}
+ #loto-full .animation-projects .project:nth-child(6) .project-media{aspect-ratio:2/1}
+}
+
+/* Fanta conserva su proporción vertical en un bloque de dos filas. */
+#loto-full .animation-projects{grid-template-columns:minmax(0,2fr) minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:auto auto;gap:16px;align-items:stretch}
+#loto-full .animation-projects .project:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .animation-projects .project:nth-child(3){grid-column:2;grid-row:1}
+#loto-full .animation-projects .project:nth-child(4){grid-column:1;grid-row:2}
+#loto-full .animation-projects .project:nth-child(5){grid-column:2;grid-row:2}
+#loto-full .animation-projects .project:nth-child(2){grid-column:3;grid-row:1/3}
+#loto-full .animation-projects .project:nth-child(6){grid-column:1/-1;grid-row:3}
+#loto-full .animation-projects .project:nth-child(1) .project-media{aspect-ratio:16/9}
+#loto-full .animation-projects .project:nth-child(2) .project-media{aspect-ratio:9/16}
+@media(max-width:800px){
+ #loto-full .animation-projects{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}
+ #loto-full .animation-projects .project:nth-child(n){grid-column:auto;grid-row:auto;height:auto}
+ #loto-full .animation-projects .project:nth-child(2){grid-column:2;grid-row:1/3;height:100%}
+ #loto-full .animation-projects .project:nth-child(6){grid-column:1/-1}
+}
+@media(max-width:650px){
+ #loto-full .animation-projects{grid-template-columns:1fr}
+ #loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto;height:auto}
+}
+
+#loto-full .animation-projects .project:nth-child(5){grid-column:2;grid-row:1}
+#loto-full .animation-projects .project:nth-child(3){grid-column:1;grid-row:2}
+#loto-full .animation-projects .project:nth-child(4){grid-column:2;grid-row:2}
+@media(max-width:800px){
+ #loto-full .animation-projects .project:nth-child(3){grid-column:1;grid-row:3}
+ #loto-full .animation-projects .project:nth-child(4){grid-column:2;grid-row:3}
+ #loto-full .animation-projects .project:nth-child(5){grid-column:1;grid-row:2}
+}
+@media(max-width:650px){
+ #loto-full .animation-projects .project:nth-child(3),#loto-full .animation-projects .project:nth-child(4),#loto-full .animation-projects .project:nth-child(5){grid-column:1;grid-row:auto}
+}
+
+#loto-full .animation-projects{grid-template-columns:minmax(0,1fr) minmax(0,2fr) minmax(0,1.3fr)}
+#loto-full .animation-projects .project:nth-child(2){grid-column:1;grid-row:1/3}
+#loto-full .animation-projects .project:nth-child(1){grid-column:2;grid-row:1}
+#loto-full .animation-projects .project:nth-child(5){grid-column:3;grid-row:1}
+#loto-full .animation-projects .project:nth-child(4){grid-column:2;grid-row:2}
+#loto-full .animation-projects .project:nth-child(3){grid-column:3;grid-row:2}
+@media(min-width:651px) and (max-width:800px){
+ #loto-full .animation-projects{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #loto-full .animation-projects .project:nth-child(2){grid-column:1;grid-row:1/3}
+ #loto-full .animation-projects .project:nth-child(1){grid-column:2;grid-row:1}
+ #loto-full .animation-projects .project:nth-child(5){grid-column:2;grid-row:2}
+ #loto-full .animation-projects .project:nth-child(4){grid-column:1;grid-row:3}
+ #loto-full .animation-projects .project:nth-child(3){grid-column:2;grid-row:3}
+}
+@media(max-width:650px){
+ #loto-full .animation-projects{grid-template-columns:1fr}
+ #loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto}
+}
+
+#loto-full .animation-projects .project:nth-child(4){grid-column:2;grid-row:1}
+#loto-full .animation-projects .project:nth-child(3){grid-column:3;grid-row:1}
+#loto-full .animation-projects .project:nth-child(1){grid-column:2;grid-row:2}
+#loto-full .animation-projects .project:nth-child(5){grid-column:3;grid-row:2}
+@media(min-width:651px) and (max-width:800px){
+ #loto-full .animation-projects .project:nth-child(4){grid-column:1;grid-row:1}
+ #loto-full .animation-projects .project:nth-child(3){grid-column:2;grid-row:1}
+ #loto-full .animation-projects .project:nth-child(2){grid-column:1;grid-row:2/4}
+ #loto-full .animation-projects .project:nth-child(1){grid-column:2;grid-row:2}
+ #loto-full .animation-projects .project:nth-child(5){grid-column:2;grid-row:3}
+}
+@media(max-width:650px){#loto-full .animation-projects .project:nth-child(n){grid-column:1;grid-row:auto}}
+
+#loto-full dialog.editorial-detail>img{width:100%;height:auto;max-height:none}
+#loto-full dialog.editorial-detail>p{max-width:none}
+
+/* Enlaces de proyectos: mismo subrayado y colores consistentes. */
+#loto-full .projects a,#loto-full dialog a,#loto-full dialog .project-behance{
+ color:var(--brown);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;border-bottom:0;transition:color .2s;
+}
+#loto-full .projects a:hover,#loto-full .projects a:focus-visible,
+#loto-full dialog a:hover,#loto-full dialog a:focus-visible{color:var(--wine)}
+
+#loto-full .match-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+#loto-full .match-mosaic img{display:block;width:100%;height:auto;max-height:none}
+#loto-full .match-mosaic img:first-child{grid-column:1/-1}
+@media(max-width:600px){#loto-full .match-mosaic{grid-template-columns:1fr}}
+
+#loto-full .editorial-projects{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+#loto-full .editorial-projects .project:nth-child(1){grid-column:2;grid-row:1/3}
+#loto-full .editorial-projects .project:nth-child(2){grid-column:1;grid-row:1}
+#loto-full .editorial-projects .project:nth-child(3){grid-column:1;grid-row:2}
+#loto-full .editorial-projects .project{height:100%;min-height:0;align-self:stretch}
+#loto-full .editorial-projects .project .project-media{height:100%;aspect-ratio:auto}
+#loto-full .editorial-projects .project:first-child .project-media{aspect-ratio:11/17}
+#loto-full .editorial-projects .project:first-child .project-media img{object-fit:contain}
+@media(max-width:650px){
+ #loto-full .editorial-projects{grid-template-columns:1fr;grid-template-rows:none}
+ #loto-full .editorial-projects .project:nth-child(n){grid-column:1;grid-row:auto;height:auto}
+ #loto-full .editorial-projects .project .project-media{height:auto;aspect-ratio:4/3}
+ #loto-full .editorial-projects .project:first-child .project-media{aspect-ratio:11/17}
+}
+
+#loto-full .editorial-projects .project:first-child{height:auto;align-self:stretch}
+#loto-full .editorial-projects .project:first-child .project-media{height:auto;aspect-ratio:auto}
+#loto-full .editorial-projects .project:first-child .project-media img{display:block;width:100%;height:auto;object-fit:contain;transform:none}
+
+/* La altura total depende del periódico; las dos portadas comparten ese alto. */
+#loto-full .editorial-projects{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));aspect-ratio:1.553;align-items:stretch}
+#loto-full .editorial-projects .project:nth-child(n){height:100%;min-height:0;align-self:stretch}
+#loto-full .editorial-projects .project:nth-child(n) .project-media{height:100%;min-height:0;aspect-ratio:auto;display:block}
+#loto-full .editorial-projects .project:first-child .project-media img{height:100%;width:100%;object-fit:fill;transform:none}
+#loto-full .editorial-projects .project:not(:first-child) .project-media img{height:100%;width:100%;object-fit:cover}
+@media(max-width:650px){
+ #loto-full .editorial-projects{aspect-ratio:auto;grid-template-columns:1fr;grid-template-rows:none}
+ #loto-full .editorial-projects .project:nth-child(n){height:auto}
+ #loto-full .editorial-projects .project:nth-child(n) .project-media{height:auto;aspect-ratio:4/3}
+ #loto-full .editorial-projects .project:first-child .project-media{aspect-ratio:auto}
+ #loto-full .editorial-projects .project:first-child .project-media img{height:auto}
+}
+
+#loto-full .hypar-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch}
+#loto-full .hypar-mosaic img{display:block;width:100%;height:100%;max-height:none;min-height:0;object-fit:contain;background:#fff}
+#loto-full .hypar-mosaic img:nth-child(1){grid-column:1;grid-row:1/3}
+#loto-full .hypar-mosaic img:nth-child(2){grid-column:2;grid-row:1}
+#loto-full .hypar-mosaic img:nth-child(3){grid-column:2;grid-row:2}
+#loto-full .hypar-mosaic img:nth-child(4){grid-column:1/-1;height:auto}
+#loto-full .hypar-mosaic img:nth-child(5),#loto-full .hypar-mosaic img:nth-child(6){height:auto;align-self:center}
+@media(max-width:600px){#loto-full .hypar-mosaic{grid-template-columns:1fr}#loto-full .hypar-mosaic img:nth-child(n){grid-column:1;grid-row:auto;height:auto}}
+
+/* Hypar: tres bloques de producto con medidas compartidas. */
+#loto-full .hypar-mosaic{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));aspect-ratio:.8;gap:10px;align-items:stretch}
+#loto-full .hypar-mosaic img:nth-child(n){width:100%;height:100%;min-height:0;max-height:none;align-self:stretch;object-fit:cover;object-position:center;background:#fff}
+#loto-full .hypar-mosaic img:nth-child(1){grid-column:1/5;grid-row:1/3;object-fit:contain}
+#loto-full .hypar-mosaic img:nth-child(2){grid-column:5/9;grid-row:1}
+#loto-full .hypar-mosaic img:nth-child(3){grid-column:9/13;grid-row:1}
+#loto-full .hypar-mosaic img:nth-child(4){grid-column:5/13;grid-row:2;object-fit:contain}
+#loto-full .hypar-mosaic img:nth-child(5){grid-column:1/6;grid-row:3/5;object-fit:contain}
+#loto-full .hypar-mosaic img:nth-child(6){grid-column:6/13;grid-row:3/5;object-fit:contain}
+@media(max-width:600px){
+ #loto-full .hypar-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;aspect-ratio:auto}
+ #loto-full .hypar-mosaic img:nth-child(n){grid-column:auto;grid-row:auto;height:auto;aspect-ratio:1;object-fit:contain}
+ #loto-full .hypar-mosaic img:nth-child(1){grid-row:1/3;aspect-ratio:auto;height:100%}
+ #loto-full .hypar-mosaic img:nth-child(4){grid-column:1/-1;aspect-ratio:16/9}
+}
+
+#loto-full .folder:first-child .project:first-child .project-media img{object-fit:cover;object-position:center top}
+
+#loto-full .hypar-mosaic img:nth-child(5){object-fit:cover;object-position:center;background:#fff}
+@media(max-width:600px){#loto-full .hypar-mosaic img:nth-child(5){aspect-ratio:4000/5402;object-fit:contain}}
+
+#loto-full .hypar-mosaic img:nth-child(4){object-fit:cover;object-position:center}
+
+#loto-full .manjara-gallery{gap:10px}
+#loto-full .manjara-gallery img{display:block;width:100%;height:auto;max-height:none}
+
+#loto-full .manjara-gallery{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:10px;align-items:stretch}
+#loto-full .manjara-gallery img{width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:1;object-fit:cover;object-position:center}
+#loto-full .manjara-gallery img:nth-child(2){object-position:center 55%}
+@media(max-width:600px){#loto-full .manjara-gallery{grid-template-columns:1fr}#loto-full .manjara-gallery img{height:auto;aspect-ratio:auto;object-fit:contain}}
+
+#loto-full .manjara-gallery{aspect-ratio:1.8;grid-template-rows:minmax(0,1fr)}
+#loto-full .manjara-gallery img{aspect-ratio:auto}
+@media(max-width:600px){#loto-full .manjara-gallery{aspect-ratio:auto;grid-template-rows:auto}}
+
+#loto-full .manjara-gallery{grid-template-columns:minmax(0,2.2fr) minmax(0,.75fr);aspect-ratio:2.95;grid-template-rows:minmax(0,1fr)}
+#loto-full .manjara-gallery img{width:100%;height:100%;object-fit:contain;object-position:center}
+#loto-full .manjara-gallery img:nth-child(2){object-position:center}
+@media(max-width:600px){#loto-full .manjara-gallery{grid-template-columns:1fr;grid-template-rows:auto;aspect-ratio:auto}#loto-full .manjara-gallery img{height:auto}}
+
+#loto-full .manjara-gallery{grid-template-columns:minmax(0,1.85fr) minmax(0,.85fr);aspect-ratio:2.7}
+#loto-full .manjara-gallery img{object-fit:cover;object-position:center}
+#loto-full .manjara-gallery img:nth-child(2){object-position:center 55%}
+@media(max-width:600px){#loto-full .manjara-gallery{grid-template-columns:1fr;aspect-ratio:auto}#loto-full .manjara-gallery img{height:auto;object-fit:contain}}
+
+#loto-full .manjara-gallery{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);aspect-ratio:2.7}
+@media(max-width:600px){#loto-full .manjara-gallery{grid-template-columns:1fr;aspect-ratio:auto}}
+
+#loto-full .manjara-gallery img:nth-child(2){object-position:center 35%}
+
+#loto-full .hongueras-mosaic{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch}
+#loto-full .hongueras-mosaic img{display:block;width:100%;height:100%;min-height:0;max-height:none;object-fit:cover;object-position:center}
+#loto-full .hongueras-mosaic img:nth-child(1){grid-column:1;grid-row:1}
+#loto-full .hongueras-mosaic img:nth-child(2){grid-column:1;grid-row:2}
+#loto-full .hongueras-mosaic img:nth-child(3){grid-column:2;grid-row:1/3;aspect-ratio:896/1200}
+@media(max-width:600px){#loto-full .hongueras-mosaic{grid-template-columns:1fr;grid-template-rows:auto}#loto-full .hongueras-mosaic img:nth-child(n){grid-column:1;grid-row:auto;height:auto;aspect-ratio:auto;object-fit:contain}}
+
+/* Proporciones equivalentes: dos horizontales junto a una vertical completa. */
+#loto-full .hongueras-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));aspect-ratio:1.48;gap:10px}
+#loto-full .hongueras-mosaic img{width:100%;height:100%;min-height:0;object-fit:cover;object-position:center}
+#loto-full .hongueras-mosaic img:nth-child(3){aspect-ratio:auto;object-fit:contain}
+@media(max-width:600px){
+ #loto-full .hongueras-mosaic{grid-template-columns:1fr;grid-template-rows:auto;aspect-ratio:auto}
+ #loto-full .hongueras-mosaic img:nth-child(n){grid-column:1;grid-row:auto;height:auto;object-fit:contain}
+}
+
+#loto-full .hongueras-mosaic img:nth-child(3){object-fit:cover;object-position:center;height:100%;align-self:stretch}
+@media(max-width:600px){#loto-full .hongueras-mosaic img:nth-child(3){height:auto;object-fit:contain}}
+
+/* Imagen principal de cada detalle a todo el ancho, sin afectar las galerías. */
+#loto-full dialog>img:not(.project-gallery){display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;margin-inline:0}
+
+/* Imagen inicial de todos los detalles hasta los bordes de la tarjeta. */
+#loto-full dialog{--detail-image-inset:36px}
+#loto-full dialog>img:not(.project-gallery),
+#loto-full dialog.character-detail>img:not(.project-gallery),
+#loto-full dialog.editorial-detail>img:not(.project-gallery),
+#loto-full dialog.florentinas-detail>img:not(.project-gallery){
+ display:block;width:calc(100% + var(--detail-image-inset) * 2);max-width:none;height:auto;max-height:none;
+ margin-left:calc(-1 * var(--detail-image-inset));margin-right:calc(-1 * var(--detail-image-inset));object-fit:contain;
+}
+@media(max-width:650px){#loto-full dialog{--detail-image-inset:20px}}
+
+#loto-full dialog:not(.portrait-video)>video{
+ width:calc(100% + var(--detail-image-inset) * 2);max-width:none;height:auto;max-height:none;
+ margin-left:calc(-1 * var(--detail-image-inset));margin-right:calc(-1 * var(--detail-image-inset));
+}
