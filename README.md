@@ -1,4 +1,4 @@
-# LoTo — landing de Lorena Torres
+# Landing CV – LoTo  
 
 Proyecto estático basado en la última previsualización recuperada. No requiere npm ni compilación.
 
