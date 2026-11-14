@@ -590,3 +590,11 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .collaboration-phrase{font-size:clamp(24px,2vw,32px);gap:24px;padding-right:24px}
 #loto-full .hero{padding-inline:7%}
 @media(max-width:650px){#loto-full .hero{padding-inline:7%}#loto-full .collaboration-band{padding:9px 0}}
+
+/* Mayor separación entre retrato y presentación. */
+#loto-full .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);column-gap:clamp(56px,6vw,112px)}
+#loto-full .hero>div:last-child{min-width:0}
+#loto-full .hero h1{font-size:clamp(112px,9vw,144px);line-height:1.05;margin-bottom:28px}
+#loto-full .hero .intro{font-size:clamp(20px,1.5vw,24px);line-height:1.6;max-width:58ch}
+@media(max-width:850px){#loto-full .hero{column-gap:40px;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}#loto-full .hero h1{font-size:96px}}
+@media(max-width:650px){#loto-full .hero{grid-template-columns:1fr;gap:28px}#loto-full .hero h1{font-size:88px;margin-bottom:20px}#loto-full .hero .intro{font-size:20px}}
