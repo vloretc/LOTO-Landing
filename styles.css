@@ -573,3 +573,14 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
  width:calc(100% + var(--detail-image-inset) * 2);max-width:none;height:auto;max-height:none;
  margin-left:calc(-1 * var(--detail-image-inset));margin-right:calc(-1 * var(--detail-image-inset));
 }
+
+/* Presentación y banda de colaboración. */
+#loto-full .hero .intro{font-size:clamp(20px,1.65vw,26px);line-height:1.55}
+#loto-full .collaboration-band{background:var(--wine);color:var(--blue);overflow:hidden;padding:22px 0}
+#loto-full .collaboration-track{display:flex;width:max-content;animation:collaboration-loop 32s linear infinite;will-change:transform}
+#loto-full .collaboration-group{display:flex;flex-shrink:0;align-items:center}
+#loto-full .collaboration-phrase{font:400 clamp(38px,4vw,64px)/1.2 Skynila;white-space:nowrap;display:flex;align-items:center;gap:32px;padding-right:32px}
+@keyframes collaboration-loop{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#loto-full #loto-footer-brown>div:first-child{padding-left:clamp(16px,2.5vw,48px)}
+@media(max-width:650px){#loto-full .hero{grid-template-columns:1fr;gap:24px}#loto-full .hero .intro{font-size:20px}#loto-full .collaboration-band{padding:18px 0}#loto-full #loto-footer-brown>div:first-child{padding-left:12px}}
+@media(prefers-reduced-motion:reduce){#loto-full .collaboration-track{animation:none}}
