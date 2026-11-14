@@ -598,3 +598,11 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .hero .intro{font-size:clamp(20px,1.5vw,24px);line-height:1.6;max-width:58ch}
 @media(max-width:850px){#loto-full .hero{column-gap:40px;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}#loto-full .hero h1{font-size:96px}}
 @media(max-width:650px){#loto-full .hero{grid-template-columns:1fr;gap:28px}#loto-full .hero h1{font-size:88px;margin-bottom:20px}#loto-full .hero .intro{font-size:20px}}
+
+/* Programas, habilidades e idiomas en tres columnas. */
+#loto-full .skills{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,64px);align-items:start}
+#loto-full .skills .languages{grid-template-columns:1fr;margin-top:0;gap:20px}
+#loto-full .skills .languages h3{margin-bottom:12px}
+#loto-full .skills .languages .track{height:24px;margin:12px 0 10px}
+#loto-full .skills .languages .level{margin:0}
+@media(max-width:700px){#loto-full .skills{grid-template-columns:1fr;gap:32px}}
