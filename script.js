@@ -23,3 +23,23 @@ document.fonts.ready.then(()=>{
 });
 const projectDialog=document.querySelector('#loto-full dialog');
 projectDialog.addEventListener('click',event=>{if(event.target!==projectDialog)return;const b=projectDialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)projectDialog.close();});
+
+// Keep two identical, viewport-filling groups so the collaboration band never runs out.
+(() => {
+ const band=document.querySelector('.collaboration-band');
+ if(!band)return;
+ const track=band.querySelector('.collaboration-track');
+ const phrase=track.querySelector('.collaboration-phrase').cloneNode(true);
+ let pending;
+ function fillBand(){
+  const group=document.createElement('div');group.className='collaboration-group';
+  group.append(phrase.cloneNode(true));
+  track.replaceChildren(group);
+  while(group.getBoundingClientRect().width<band.clientWidth+phrase.getBoundingClientRect().width && group.children.length<100){group.append(phrase.cloneNode(true));}
+  track.append(group.cloneNode(true));
+  track.style.setProperty('--loop-duration',`${group.getBoundingClientRect().width/45}s`);
+ }
+ const schedule=()=>{cancelAnimationFrame(pending);pending=requestAnimationFrame(fillBand);};
+ document.fonts.ready.then(schedule);
+ new ResizeObserver(schedule).observe(band);
+})();
