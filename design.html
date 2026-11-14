@@ -168,6 +168,15 @@ a:hover{color:var(--wine)}
 
 .top{align-items:center;gap:28px}.top .brand{flex:0 0 auto}.top .system-nav{flex:1;justify-content:flex-end;align-items:center;border:0;padding:0;gap:12px 22px}.top .system-nav a{white-space:nowrap;font-size:15px}.page-title{max-width:none;margin:0 0 56px}.personality-keyword{font-family:var(--interface);font-weight:600;color:var(--wine)}
 @media(max-width:700px){.top{gap:20px;align-items:flex-start}.top .system-nav{gap:10px 16px}.top .system-nav a{font-size:13px}.page-title{margin-bottom:40px}}
+
+/* Cabecera y paleta del sistema de diseño. */
+.top .brand{width:auto;flex:0 0 auto;justify-content:flex-start}
+.top .system-nav{min-width:0;flex-wrap:nowrap;gap:clamp(12px,1.7vw,28px)}
+.top .system-nav a{font-size:clamp(13px,1.15vw,16px)}
+.page-title{font-size:96px;line-height:1.08}
+.palette{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:900px){.top .system-nav{flex-wrap:wrap}.page-title{font-size:clamp(48px,9vw,96px)}}
+@media(max-width:600px){.palette{grid-template-columns:1fr}.top{align-items:center}.top .system-nav{justify-content:flex-end}}
 </style></head><body>
 <a class="skip" href="#content">Saltar al contenido</a>
 <header class="top" id="top"><div class="brand"><img src="assets/svg/imagen-01.svg" alt="LoTo"></div><nav class="system-nav" aria-label="Secciones del sistema de diseño"><a href="#overview">Personalidad</a><a href="#colors">Colores</a><a href="#typography">Tipografías</a><a href="#layout">Layout</a><a href="#depth">Profundidad</a><a href="#shapes">Formas</a><a href="#components">Componentes</a><a href="#rules">Sí y no</a></nav></header>
