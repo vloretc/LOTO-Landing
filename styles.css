@@ -613,3 +613,7 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .skills .tags span{font-size:16px}
 @media(max-width:1000px){#loto-full .skills{--program-block-width:220px;column-gap:28px}}
 @media(max-width:700px){#loto-full .skills{--program-block-width:272px;grid-template-columns:1fr;gap:32px}}
+
+/* Habilidades en dos filas y columna de idiomas más cercana. */
+@media(min-width:1001px){#loto-full .skills{grid-template-columns:var(--program-block-width) minmax(0,480px) var(--program-block-width);justify-content:start}}
+#loto-full .skills .tags{max-width:480px}
