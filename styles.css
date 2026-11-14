@@ -634,3 +634,10 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .skills .languages h3{font-size:24px;margin-bottom:12px}
 @media(max-width:1100px){#loto-full .skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}}
 @media(max-width:650px){#loto-full .skills{grid-template-columns:1fr}.hero .intro{font-size:18px}#loto-full .skills h3,#loto-full .skills .languages h3{font-size:22px}}
+
+/* Separación uniforme entre los bloques visibles. */
+@media(min-width:1101px){
+ #loto-full .skills{--program-block-width:clamp(190px,18vw,272px);grid-template-columns:var(--program-block-width) max-content var(--program-block-width) var(--program-block-width);justify-content:space-between;column-gap:24px}
+ #loto-full .skills>div:nth-child(2){width:max-content}
+ #loto-full .skills .tags{width:max-content}
+}
