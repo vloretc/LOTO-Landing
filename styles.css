@@ -670,3 +670,8 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .folder:nth-child(2) .tab,#loto-full .folder:nth-child(4) .tab{margin-inline:auto}
 #loto-full .folder .base{height:24px}
 @media(max-width:650px){#loto-full .folder{padding-top:32px}#loto-full .folder .tab{min-height:66px;padding:18px 28px;font-size:18px;text-align:center}#loto-full .folder .base{height:20px}}
+
+/* Mayor aire alrededor de la información de los cursos. */
+#loto-full .course .copy{padding:36px 20px 40px}
+#loto-full .course .copy h3{margin-bottom:24px}
+@media(max-width:650px){#loto-full .course .copy{padding:28px 20px 32px}}
