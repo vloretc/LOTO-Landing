@@ -606,3 +606,10 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full .skills .languages .track{height:24px;margin:12px 0 10px}
 #loto-full .skills .languages .level{margin:0}
 @media(max-width:700px){#loto-full .skills{grid-template-columns:1fr;gap:32px}}
+
+/* Columnas ajustadas al ancho real de los programas. */
+#loto-full .skills{--program-block-width:272px;grid-template-columns:var(--program-block-width) minmax(0,1fr) var(--program-block-width);column-gap:clamp(32px,5vw,80px)}
+#loto-full .skills .programs,#loto-full .skills .languages{width:100%;max-width:var(--program-block-width)}
+#loto-full .skills .tags span{font-size:16px}
+@media(max-width:1000px){#loto-full .skills{--program-block-width:220px;column-gap:28px}}
+@media(max-width:700px){#loto-full .skills{--program-block-width:272px;grid-template-columns:1fr;gap:32px}}
