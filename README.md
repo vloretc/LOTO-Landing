@@ -1,27 +1,28 @@
-# Landing CV – LoTo  
+# LoTo — Portafolio de diseño gráfico
 
-Proyecto estático basado en la última previsualización recuperada. No requiere npm ni compilación.
+**Autora: Valeria Lorena Torres Cortés**
 
-## Abrir en Codex
-1. Descomprime la carpeta y ábrela como proyecto en Codex.
-2. Pide: «Lee README.md y revisa esta landing conservando su composición, colores y carpetas. Ayúdame a completar los recursos pendientes y a comprobarla en móvil y escritorio».
-3. Para verla, abre index.html en el navegador o ejecuta `python3 -m http.server 8000` desde esta carpeta y visita http://localhost:8000.
+Este proyecto es mi portafolio de Diseño Gráfico Digital. Presenta quién soy, los programas que manejo, mis habilidades, idiomas, cursos y medios de contacto. Los proyectos se organizan en cuatro carpetas: Packaging, Motion Graphics / Modelado 3D, Diseño Editorial y Otros. Cada proyecto permite explorar imágenes, videos y una breve descripción.
 
-## Archivos
-- index.html: contenido y estructura.
-- styles.css: colores, tipografías, medidas, diseño adaptable y animaciones.
-- script.js: carpetas, proyectos y tarjeta de detalle.
-- assets/: logo e imágenes extraídos de la previsualización original.
-- assets/fonts/: ubicación para tus fuentes originales.
+El repositorio también incluye una guía visual del sistema de diseño LoTo, con los colores, tipografías, formas, componentes y reglas de uso de la marca. Ambas páginas se adaptan a computadora y celular y están construidas con HTML, CSS y JavaScript.
 
-## Pendiente de completar
-- Añadir tu fotografía donde aparece «Tu fotografía» en el bloque inicial.
-- Fuentes originales incluidas: Skynila Regular y Roobert TRIAL Light, Medium y Semibold. Tome Sans Variable se carga desde Adobe Fonts (requiere conexión a internet).
-- Añadir imágenes, nombres y descripciones reales a Animación y Modelado 3D, Diseño Editorial y Otros. Ahora conservan espacios de muestra identificados como pendientes.
-- Revisar las descripciones y cantidades de proyectos en las variables names, descriptions y groups de script.js.
-- Confirmar el correo: se conserva lore180509tc@gmail.com de la última previsualización recuperada.
+## Páginas publicadas
 
-## Criterios que se conservan
-Navegación Sobre mí / Proyectos / Cursos / Contacto; cintas después de Hola; programas y habilidades en dos columnas; idiomas debajo en tres; carpetas con pestañas; una carpeta abierta a la vez; nombres sobre las imágenes; descripciones en el detalle; cierre con ×; cursos y footer originales.
+- [Portafolio — index.html](https://vloretc.github.io/LOTO-Landing/)
+- [Sistema de diseño — design.html](https://vloretc.github.io/LOTO-Landing/design.html)
 
-Los íconos de contacto son SVG incluidos, sin dependencias externas. Skynila y Roobert originales están incluidas y se cargan desde assets/fonts; Tome Sans Variable se carga desde Adobe Fonts. Se conserva el aspecto de la última composición restaurada: barras con esquinas de 5 px y footer café oscuro.
+## Archivos del proyecto
+
+- `index.html`: página principal del portafolio.
+- `design.html`: guía visual del sistema de diseño.
+- `styles.css`: estilos del portafolio.
+- `script.js`: interacción de carpetas y detalles de los proyectos.
+- `assets/img/`: fotografías, imágenes de proyectos y GIF, organizados en subcarpetas.
+- `assets/svg/`: logo e imágenes vectoriales.
+- `assets/mp4/`: videos de los proyectos.
+- `assets/fonts/`: fuentes locales. Tome Sans Variable se carga desde Adobe Fonts.
+- `entregables/`: documentos Word del sistema de diseño y de la arquitectura de información.
+
+## Vista local
+
+Abre `index.html` o `design.html` en tu navegador. También puedes ejecutar `python3 -m http.server 8000` desde esta carpeta y visitar `http://localhost:8000/`.
