@@ -584,3 +584,9 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}button,a{-webk
 #loto-full #loto-footer-brown>div:first-child{padding-left:clamp(16px,2.5vw,48px)}
 @media(max-width:650px){#loto-full .hero{grid-template-columns:1fr;gap:24px}#loto-full .hero .intro{font-size:20px}#loto-full .collaboration-band{padding:18px 0}#loto-full #loto-footer-brown>div:first-child{padding-left:12px}}
 @media(prefers-reduced-motion:reduce){#loto-full .collaboration-track{animation:none}}
+
+/* Banda más compacta y presentación con mayor margen lateral. */
+#loto-full .collaboration-band{padding:10px 0}
+#loto-full .collaboration-phrase{font-size:clamp(24px,2vw,32px);gap:24px;padding-right:24px}
+#loto-full .hero{padding-inline:7%}
+@media(max-width:650px){#loto-full .hero{padding-inline:7%}#loto-full .collaboration-band{padding:9px 0}}
