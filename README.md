@@ -11,14 +11,14 @@ El repositorio también incluye la guía visual de LoTo y la documentación de l
 - [Portafolio (index.html)](https://vloretc.github.io/LOTO-Landing/index.html)
 - [Sistema de diseño (design.html)](https://vloretc.github.io/LOTO-Landing/design.html)
 
-## Documentación
+## Documentos
 
 | Documento | Markdown | PDF |
 | --- | --- | --- |
 | Sistema de diseño | [DESIGN.md](entregables/DESIGN.md) | [DESIGN.pdf](entregables/DESIGN.pdf) |
 | Arquitectura de información del portafolio | [CV.md](entregables/CV.md) | [Arquitectura-CV.pdf](entregables/Arquitectura-CV.pdf) |
 
-## Archivos del proyecto
+## Contenido del repositorio
 
 - `index.html`: página principal del portafolio.
 - `design.html`: guía visual del sistema de diseño.
