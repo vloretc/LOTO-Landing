@@ -1,15 +1,22 @@
 # LoTo — Portafolio de diseño gráfico
 
-**Autora: Valeria Lorena Torres Cortés**
+**Valeria Lorena Torres Cortés**
 
-Este proyecto es mi portafolio de Diseño Gráfico Digital. Presenta quién soy, los programas que manejo, mis habilidades, idiomas, cursos y medios de contacto. Los proyectos se organizan en cuatro carpetas: Packaging, Motion Graphics / Modelado 3D, Diseño Editorial y Otros. Cada proyecto permite explorar imágenes, videos y una breve descripción.
+LoTo es mi portafolio de Diseño Gráfico Digital. Reúne mi presentación, los programas que manejo, mis habilidades, idiomas, cursos y medios de contacto. Los proyectos se organizan en cuatro carpetas de Packaging, Motion Graphics / Modelado 3D, Diseño Editorial y Otros. Cada proyecto incluye una breve descripción e imágenes o video.
 
-El repositorio también incluye una guía visual del sistema de diseño LoTo, con los colores, tipografías, formas, componentes y reglas de uso de la marca. Ambas páginas se adaptan a computadora y celular y están construidas con HTML, CSS y JavaScript.
+El repositorio también incluye la guía visual de LoTo y la documentación de la arquitectura de información del portafolio. Las dos páginas están hechas con HTML, CSS y JavaScript y se adaptan a computadora y celular.
 
 ## Páginas publicadas
 
-- [Portafolio — index.html](https://vloretc.github.io/LOTO-Landing/)
-- [Sistema de diseño — design.html](https://vloretc.github.io/LOTO-Landing/design.html)
+- [Portafolio (index.html)](https://vloretc.github.io/LOTO-Landing/index.html)
+- [Sistema de diseño (design.html)](https://vloretc.github.io/LOTO-Landing/design.html)
+
+## Documentación
+
+| Documento | Markdown | PDF |
+| --- | --- | --- |
+| Sistema de diseño | [DESIGN.md](entregables/DESIGN.md) | [DESIGN.pdf](entregables/DESIGN.pdf) |
+| Arquitectura de información del portafolio | [CV.md](entregables/CV.md) | [Arquitectura-CV.pdf](entregables/Arquitectura-CV.pdf) |
 
 ## Archivos del proyecto
 
@@ -21,7 +28,7 @@ El repositorio también incluye una guía visual del sistema de diseño LoTo, co
 - `assets/svg/`: logo e imágenes vectoriales.
 - `assets/mp4/`: videos de los proyectos.
 - `assets/fonts/`: fuentes locales. Tome Sans Variable se carga desde Adobe Fonts.
-- `entregables/`: documentos Word del sistema de diseño y de la arquitectura de información.
+- `entregables/`: documentos en Word, Markdown y PDF del sistema de diseño y de la arquitectura de información.
 
 ## Vista local
 
