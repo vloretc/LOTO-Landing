@@ -1,4 +1,4 @@
-# LoTo — Portafolio de diseño gráfico
+# Landing CV – LoTo
 
 **Valeria Lorena Torres Cortés**
 
